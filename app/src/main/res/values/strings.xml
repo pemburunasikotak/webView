@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">webview</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">BPS</string>
+    <string name="nav_header_subtitle">BPS Kota Malang</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Beranda</string>
+    <string name="menu_kependudukan">Kependudukan</string>
+    <string name="menu_kemiskinan">Kemiskinan</string>
+    <string name="menu_IPM">IPM</string>
+    <string name="menu_Ketenagakerjaan">Ketenagakerjaan</string>
+    <string name="menu_perekonomian">Perekonomian</string>
+    <string name="menu_kesejahteraan">Kesejahteraan</string>
+    <string name="menu_tentang">tentang</string>
+    <string name="menu_lainya">Lainnya</string>
+</resources>

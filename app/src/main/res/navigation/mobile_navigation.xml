@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.webview.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_kependudukan"
+        android:name="com.example.webview.ui.kependudukan.KependudukanFragment"
+        android:label="@string/menu_kependudukan"
+        tools:layout="@layout/fragment_kependudukan" />
+
+    <fragment
+        android:id="@+id/nav_ipm"
+        android:name="com.example.webview.ui.ipm.IpmFragment"
+        android:label="@string/menu_IPM"
+        tools:layout="@layout/fragment_ipm" />
+    <fragment
+        android:id="@+id/nav_ketenagakerjaan"
+        android:name="com.example.webview.ui.ketenagakerjaan.KetenagakerjaanFragment"
+        android:label="@string/menu_Ketenagakerjaan"
+        tools:layout="@layout/fragment_ketenagakerjaan" />
+    <fragment
+        android:id="@+id/nav_perekonimian"
+        android:name="com.example.webview.ui.perekonomian.PerekonomianFragment"
+        android:label="@string/menu_perekonomian"
+        tools:layout="@layout/fragment_perekonomian" />
+    <fragment
+        android:id="@+id/nav_kemiskinan"
+        android:name="com.example.webview.ui.kemiskinan.KemiskinanFragment"
+        android:label="@string/menu_kemiskinan"
+        tools:layout="@layout/fragment_kemiskinan" />
+    <fragment
+        android:id="@+id/nav_kesejahteraan"
+        android:name="com.example.webview.ui.kesejahteraan.KesejahteraanFragment"
+        android:label="@string/menu_kesejahteraan"
+        tools:layout="@layout/fragment_kesejahteraan" />
+
+</navigation>
