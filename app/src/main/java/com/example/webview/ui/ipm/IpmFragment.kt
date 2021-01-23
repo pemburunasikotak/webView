@@ -9,15 +9,10 @@ import android.view.ViewGroup
 import android.webkit.WebSettings
 import android.webkit.WebView
 import android.webkit.WebViewClient
-import android.widget.TextView
 import androidx.fragment.app.Fragment
-import androidx.lifecycle.Observer
-import androidx.lifecycle.ViewModelProviders
 import com.example.webview.R
 
 class IpmFragment : Fragment() {
-
-    lateinit var IpmViewModel: IpmViewModel
     var webViewPrivacyPolicy:WebView?=null
     override fun onCreateView(
             inflater: LayoutInflater,
@@ -48,7 +43,7 @@ class IpmFragment : Fragment() {
         webViewPrivacyPolicy!!.settings.defaultZoom = WebSettings.ZoomDensity.FAR
         /* set scrollbar style to SCROLLBARS_INSIDE_OVERLAY */
         webViewPrivacyPolicy!!.scrollBarStyle = View.SCROLLBARS_INSIDE_OVERLAY
-        webViewPrivacyPolicy!!.loadUrl("https://stackoverflow.com/questions/50312777/java-lang-nullpointerexception-android-attempt-to-invoke-virtual-method-error")
+        webViewPrivacyPolicy!!.loadUrl("https://bps.go.id/")
         /* set webview client */
         webViewPrivacyPolicy!!.webViewClient = WebViewClient()
         //webViewPrivacyPolicy!!.loadUrl("https://salatigakota.bps.go.id/subject/40/gender.html#subjekViewTab3")

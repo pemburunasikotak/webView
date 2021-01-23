@@ -1,6 +1,6 @@
 @file:Suppress("DEPRECATION")
 
-package com.example.webview.ui.kesejahteraan
+package com.example.webview.ui.tentang
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -15,27 +15,27 @@ import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
 import com.example.webview.R
 
-class KesejahteraanFragment : Fragment() {
+class TentangFragment : Fragment() {
     var webViewPrivacyPolicy: WebView?=null
-    // lateinit var KesejahteraanViewModel: KesejahteraanViewModel
+    //lateinit var PerekonomianViewModel: PerekonomianViewModel
 
     override fun onCreateView(
             inflater: LayoutInflater,
             container: ViewGroup?,
             savedInstanceState: Bundle?
     ): View? {
-//        KesejahteraanViewModel =
-//                ViewModelProviders.of(this).get(KesejahteraanViewModel::class.java)
-        val root = inflater.inflate(R.layout.fragment_kesejahteraan, container, false)
-        //val textView: TextView = root.findViewById(R.id.text_kesejahteraan)
-//        KesejahteraanViewModel.text.observe(viewLifecycleOwner, Observer {
+//        PerekonomianViewModel =
+//                ViewModelProviders.of(this).get(PerekonomianViewModel::class.java)
+        val root = inflater.inflate(R.layout.fragment_perekonomian, container, false)
+        //val textView: TextView = root.findViewById(R.id.text_perekonimian)
+//        PerekonomianViewModel.text.observe(viewLifecycleOwner, Observer {
 //            textView.text = it
 //        })
         return root
     }
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        webViewPrivacyPolicy = view.findViewById(R.id.webViewKesejahteraan) as WebView
+        webViewPrivacyPolicy = view.findViewById(R.id.webViewperekonomian) as WebView
 
         /* get setting from webview to set load image automatically to true */
         webViewPrivacyPolicy!!.settings.loadsImagesAutomatically = true
@@ -60,7 +60,7 @@ class KesejahteraanFragment : Fragment() {
         /* set scrollbar style to SCROLLBARS_INSIDE_OVERLAY */
         webViewPrivacyPolicy!!.scrollBarStyle = View.SCROLLBARS_INSIDE_OVERLAY
 
-        webViewPrivacyPolicy!!.loadUrl("https://bps.go.id/subject/23/kemiskinan-dan-ketimpangan.html#subjekViewTab3")
+        webViewPrivacyPolicy!!.loadUrl("https://bps.go.id/subject/8/ekspor-impor.html#subjekViewTab3")
 
         /* set webview client */
         webViewPrivacyPolicy!!.webViewClient = WebViewClient()

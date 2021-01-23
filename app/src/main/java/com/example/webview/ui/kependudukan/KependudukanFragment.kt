@@ -61,7 +61,7 @@ class KependudukanFragment : Fragment() {
         /* set scrollbar style to SCROLLBARS_INSIDE_OVERLAY */
         webViewPrivacyPolicy!!.scrollBarStyle = View.SCROLLBARS_INSIDE_OVERLAY
 
-        webViewPrivacyPolicy!!.loadUrl("https://jouganime.com/")
+        webViewPrivacyPolicy!!.loadUrl("https://bps.go.id/subject/12/kependudukan.html#subjekViewTab1")
 
         /* set webview client */
         webViewPrivacyPolicy!!.webViewClient = WebViewClient()
