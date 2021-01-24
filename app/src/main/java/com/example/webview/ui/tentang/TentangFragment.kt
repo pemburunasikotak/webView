@@ -9,10 +9,7 @@ import android.view.ViewGroup
 import android.webkit.WebSettings
 import android.webkit.WebView
 import android.webkit.WebViewClient
-import android.widget.TextView
 import androidx.fragment.app.Fragment
-import androidx.lifecycle.Observer
-import androidx.lifecycle.ViewModelProviders
 import com.example.webview.R
 
 class TentangFragment : Fragment() {
@@ -26,7 +23,7 @@ class TentangFragment : Fragment() {
     ): View? {
 //        PerekonomianViewModel =
 //                ViewModelProviders.of(this).get(PerekonomianViewModel::class.java)
-        val root = inflater.inflate(R.layout.fragment_perekonomian, container, false)
+        val root = inflater.inflate(R.layout.fragment_tentang, container, false)
         //val textView: TextView = root.findViewById(R.id.text_perekonimian)
 //        PerekonomianViewModel.text.observe(viewLifecycleOwner, Observer {
 //            textView.text = it
@@ -35,7 +32,7 @@ class TentangFragment : Fragment() {
     }
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        webViewPrivacyPolicy = view.findViewById(R.id.webViewperekonomian) as WebView
+        webViewPrivacyPolicy = view.findViewById(R.id.webViewtentang) as WebView
 
         /* get setting from webview to set load image automatically to true */
         webViewPrivacyPolicy!!.settings.loadsImagesAutomatically = true
@@ -60,7 +57,7 @@ class TentangFragment : Fragment() {
         /* set scrollbar style to SCROLLBARS_INSIDE_OVERLAY */
         webViewPrivacyPolicy!!.scrollBarStyle = View.SCROLLBARS_INSIDE_OVERLAY
 
-        webViewPrivacyPolicy!!.loadUrl("https://bps.go.id/subject/8/ekspor-impor.html#subjekViewTab3")
+        webViewPrivacyPolicy!!.loadUrl("https://salatigakota.bps.go.id/menu/1/informasi-umum.html#masterMenuTab1")
 
         /* set webview client */
         webViewPrivacyPolicy!!.webViewClient = WebViewClient()

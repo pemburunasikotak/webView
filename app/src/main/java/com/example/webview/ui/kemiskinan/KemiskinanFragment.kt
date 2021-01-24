@@ -48,7 +48,7 @@ class KemiskinanFragment : Fragment() {
         webViewPrivacyPolicy!!.settings.defaultZoom = WebSettings.ZoomDensity.FAR
         /* set scrollbar style to SCROLLBARS_INSIDE_OVERLAY */
         webViewPrivacyPolicy!!.scrollBarStyle = View.SCROLLBARS_INSIDE_OVERLAY
-        webViewPrivacyPolicy!!.loadUrl("https://bps.go.id/subject/23/kemiskinan-dan-ketimpangan.html#subjekViewTab3")
+        webViewPrivacyPolicy!!.loadUrl("https://salatigakota.bps.go.id/subject/23/kemiskinan.html#subjekViewTab3")
         /* set webview client */
         webViewPrivacyPolicy!!.webViewClient = WebViewClient()
         //webViewPrivacyPolicy!!.loadUrl("https://salatigakota.bps.go.id/subject/40/gender.html#subjekViewTab3")

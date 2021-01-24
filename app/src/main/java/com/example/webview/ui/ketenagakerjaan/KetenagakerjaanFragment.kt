@@ -60,7 +60,7 @@ class KetenagakerjaanFragment : Fragment() {
         /* set scrollbar style to SCROLLBARS_INSIDE_OVERLAY */
         webViewPrivacyPolicy!!.scrollBarStyle = View.SCROLLBARS_INSIDE_OVERLAY
 
-        webViewPrivacyPolicy!!.loadUrl("https://bps.go.id/subject/26/indeks-pembangunan-manusia.html#subjekViewTab3")
+        webViewPrivacyPolicy!!.loadUrl("https://salatigakota.bps.go.id/subject/6/tenaga-kerja.html#subjekViewTab3")
 
         /* set webview client */
         webViewPrivacyPolicy!!.webViewClient = WebViewClient()

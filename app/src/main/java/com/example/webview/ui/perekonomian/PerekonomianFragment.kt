@@ -60,7 +60,7 @@ class PerekonomianFragment : Fragment() {
         /* set scrollbar style to SCROLLBARS_INSIDE_OVERLAY */
         webViewPrivacyPolicy!!.scrollBarStyle = View.SCROLLBARS_INSIDE_OVERLAY
 
-        webViewPrivacyPolicy!!.loadUrl("https://bps.go.id/subject/8/ekspor-impor.html#subjekViewTab3")
+        webViewPrivacyPolicy!!.loadUrl("https://salatigakota.bps.go.id/subject/13/keuangan.html#subjekViewTab3")
 
         /* set webview client */
         webViewPrivacyPolicy!!.webViewClient = WebViewClient()

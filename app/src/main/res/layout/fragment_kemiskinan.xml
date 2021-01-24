@@ -11,7 +11,7 @@
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:textSize="30dp"
-        android:text="Home Aplikasi"
+        android:text="Kemiskinan"
         android:textStyle="bold"
         android:textAlignment="center"
         android:textColor="#f000"

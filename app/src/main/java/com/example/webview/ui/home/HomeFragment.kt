@@ -15,7 +15,6 @@ import com.example.webview.R
 
 
 class HomeFragment : Fragment() {
-    var mWebView: WebView? = null
     var webViewPrivacyPolicy:WebView?=null
 
     override fun onCreateView(
@@ -24,8 +23,6 @@ class HomeFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         val root = inflater.inflate(R.layout.fragment_home, container, false)
-
-
         return root
     }
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
@@ -50,7 +47,7 @@ class HomeFragment : Fragment() {
 
         /* set webview client */
         webViewPrivacyPolicy!!.webViewClient = WebViewClient()
-        webViewPrivacyPolicy!!.loadUrl("https://bps.go.id/")
+        webViewPrivacyPolicy!!.loadUrl("https://salatigakota.bps.go.id/")
     }
 }
 
